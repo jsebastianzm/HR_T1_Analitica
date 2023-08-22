@@ -1,2 +1,2 @@
 # HR_T1_Analitica
-Primer taller de recursos humanos sobre el curso analítica 3
+Primer taller sobre recursos humanos del curso analítica 3
