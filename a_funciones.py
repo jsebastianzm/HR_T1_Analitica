@@ -61,6 +61,7 @@ def medir_modelos(modelos,scoring,X,y,cv):
         pdscores=pd.DataFrame(scores)
         metric_modelos=pd.concat([metric_modelos,pdscores],axis=1)
     
-    metric_modelos.columns=["reg_lineal","decision_tree","random_forest","gradient_boosting"]
+    # metric_modelos.columns=["reg_logistic","decision_tree","random_forest","gradient_boosting"]
+    metric_modelos.columns=["reg_logistic","decision_tree"]
     return metric_modelos
 
