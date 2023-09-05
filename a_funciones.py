@@ -4,9 +4,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.feature_selection import SelectFromModel
 from sklearn.linear_model import Lasso
 from sklearn.model_selection import cross_val_score
-from sklearn.ensemble import RandomForestRegressor ##Ensamble con bagging
-from sklearn.linear_model import LogisticRegression, Lasso
-from sklearn import tree ###para ajustar arboles de decisión
+from sklearn.linear_model import Lasso
 
 ### Función para conocer información de cada una de las variables del dataframe
 def info_columns(df):
