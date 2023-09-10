@@ -15,10 +15,11 @@ def info_columns(df):
 
 #Función que imputa datos para variables numéricas
 def impute_columns(df, columns, strategy): 
-  imputer = SimpleImputer(strategy=strategy)
   for column in columns:
-    column_imputed = imputer.fit_transform(df[column].values.reshape(-1, 1))
-    df[column] = column_imputed.flatten()
+    if df[column].isna().any():
+        imputer = SimpleImputer(strategy=strategy)
+        column_imputed = imputer.fit_transform(df[column].values.reshape(-1, 1))
+        df[column] = column_imputed.flatten()
   return df
 
 #Funcion de selecciond de variables
